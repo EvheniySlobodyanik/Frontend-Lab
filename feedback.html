@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Зворотній зв’язок — MedConsult Online</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=60&h=60&fit=crop"
+        alt="Логотип MedConsult Online"
+        width="60"
+        height="60"
+      />
+      <h1>MedConsult Online</h1>
+      <p>Форма для зворотного зв’язку, пропозицій та звернень пацієнтів</p>
+      <nav>
+        <a href="index.html">Головна</a> | <a href="doctors.html">Фахівці</a> |
+        <a href="feedback.html">Зворотній зв’язок</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <h2>Залишити звернення або записатися на консультацію</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Персональна інформація</legend>
+
+          <p>
+            <label for="fullName">1. Прізвище та ім’я:</label><br />
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Наприклад: Слободяник Євгеній"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="userEmail">2. E-mail адреса:</label><br />
+            <input
+              type="email"
+              id="userEmail"
+              name="userEmail"
+              placeholder="user@example.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="userAge">3. Вік (повних років):</label><br />
+            <input
+              type="number"
+              id="userAge"
+              name="userAge"
+              min="1"
+              max="120"
+              placeholder="20"
+              required
+            />
+          </p>
+
+          <p>
+            <label>4. Освіта:</label><br />
+            <input
+              type="radio"
+              id="edu-secondary"
+              name="education"
+              value="неповна"
+              required
+            />
+            <label for="edu-secondary">Неповна</label><br />
+
+            <input
+              type="radio"
+              id="edu-complete"
+              name="education"
+              value="повна"
+            />
+            <label for="edu-complete">Повна</label><br />
+
+            <input
+              type="radio"
+              id="edu-vocational"
+              name="education"
+              value="професійна"
+            />
+            <label for="edu-vocational">Професійна</label><br />
+
+            <input type="radio" id="edu-higher" name="education" value="вища" />
+            <label for="edu-higher">Вища</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <p>
+          <label for="feedbackGoal">5. Мета зворотнього зв’язку:</label><br />
+          <select id="feedbackGoal" name="feedbackGoal" required>
+            <option value="" disabled selected>
+              -- Оберіть мету звернення --
+            </option>
+            <option value="cooperation">Співпраця</option>
+            <option value="copyright">
+              Скарга на порушення права власності
+            </option>
+            <option value="suggestion">Пропозиція</option>
+            <option value="bug">Наявність помилки</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="details">6. Детально (суть запитання або проблеми):</label
+          ><br />
+          <textarea
+            id="details"
+            name="details"
+            rows="6"
+            cols="50"
+            maxlength="400"
+            placeholder="Введіть текст вашого звернення (максимум 400 символів)..."
+            required
+          ></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent"
+            >7. Я надаю добровільну згоду на обробку моїх персональних даних
+            згідно з чинним законодавством України.</label
+          >
+        </p>
+
+        <p>
+          <button type="submit">Відправити повідомлення</button>
+          <button type="reset">Очистити поля</button>
+        </p>
+      </form>
+    </main>
+
+    <hr />
+    <footer>
+      <p>&copy; 2026 MedConsult Online. Служба турботи про пацієнтів.</p>
+    </footer>
+  </body>
+</html>
