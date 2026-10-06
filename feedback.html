@@ -8,15 +8,15 @@
   <body>
     <header>
       <img
-        src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=60&h=60&fit=crop"
+        src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=70&h=70&fit=crop"
         alt="Логотип MedConsult Online"
-        width="60"
-        height="60"
+        width="70"
+        height="70"
       />
       <h1>MedConsult Online</h1>
-      <p>Форма для зворотного зв’язку, пропозицій та звернень пацієнтів</p>
+      <p>Служба зв’язку з клієнтами та технічної підтримки</p>
       <nav>
-        <a href="index.html">Головна</a> | <a href="doctors.html">Фахівці</a> |
+        <a href="index.html">Головна</a> | <a href="services.html">Послуги</a> |
         <a href="feedback.html">Зворотній зв’язок</a>
       </nav>
     </header>
@@ -24,36 +24,36 @@
     <hr />
 
     <main>
-      <h2>Залишити звернення або записатися на консультацію</h2>
+      <h2>Форма зворотнього зв’язку</h2>
 
       <form action="#" method="post">
         <fieldset>
           <legend>Персональна інформація</legend>
 
           <p>
-            <label for="fullName">1. Прізвище та ім’я:</label><br />
+            <label for="userName">1. Прізвище та ім’я:</label><br />
             <input
               type="text"
-              id="fullName"
-              name="fullName"
+              id="userName"
+              name="userName"
               placeholder="Наприклад: Слободяник Євгеній"
               required
             />
           </p>
 
           <p>
-            <label for="userEmail">2. E-mail адреса:</label><br />
+            <label for="userEmail">2. E-mail:</label><br />
             <input
               type="email"
               id="userEmail"
               name="userEmail"
-              placeholder="user@example.com"
+              placeholder="name@domain.com"
               required
             />
           </p>
 
           <p>
-            <label for="userAge">3. Вік (повних років):</label><br />
+            <label for="userAge">3. Вік:</label><br />
             <input
               type="number"
               id="userAge"
@@ -64,88 +64,53 @@
               required
             />
           </p>
-
-          <p>
-            <label>4. Освіта:</label><br />
-            <input
-              type="radio"
-              id="edu-secondary"
-              name="education"
-              value="неповна"
-              required
-            />
-            <label for="edu-secondary">Неповна</label><br />
-
-            <input
-              type="radio"
-              id="edu-complete"
-              name="education"
-              value="повна"
-            />
-            <label for="edu-complete">Повна</label><br />
-
-            <input
-              type="radio"
-              id="edu-vocational"
-              name="education"
-              value="професійна"
-            />
-            <label for="edu-vocational">Професійна</label><br />
-
-            <input type="radio" id="edu-higher" name="education" value="вища" />
-            <label for="edu-higher">Вища</label>
-          </p>
         </fieldset>
 
         <br />
 
         <p>
-          <label for="feedbackGoal">5. Мета зворотнього зв’язку:</label><br />
-          <select id="feedbackGoal" name="feedbackGoal" required>
+          <label for="feedbackTopic">4. Мета зворотнього зв’язку:</label><br />
+          <select id="feedbackTopic" name="feedbackTopic" required>
             <option value="" disabled selected>
               -- Оберіть мету звернення --
             </option>
-            <option value="cooperation">Співпраця</option>
-            <option value="copyright">
-              Скарга на порушення права власності
-            </option>
-            <option value="suggestion">Пропозиція</option>
-            <option value="bug">Наявність помилки</option>
+            <option value="cooperation">співпраця</option>
+            <option value="service-complaint">скарга на якість послуги</option>
+            <option value="suggestion">пропозиція</option>
+            <option value="site-bug">наявність помилки на сайті</option>
           </select>
         </p>
 
         <p>
-          <label for="details">6. Детально (суть запитання або проблеми):</label
-          ><br />
+          <label for="feedbackDetail">5. Детально:</label><br />
           <textarea
-            id="details"
-            name="details"
+            id="feedbackDetail"
+            name="feedbackDetail"
             rows="6"
-            cols="50"
-            maxlength="400"
-            placeholder="Введіть текст вашого звернення (максимум 400 символів)..."
+            cols="55"
+            maxlength="350"
+            placeholder="Опишіть ваше питання або пропозицію (не більше 350 символів)..."
             required
           ></textarea>
         </p>
 
         <p>
-          <input type="checkbox" id="consent" name="consent" required />
-          <label for="consent"
-            >7. Я надаю добровільну згоду на обробку моїх персональних даних
-            згідно з чинним законодавством України.</label
+          <input type="checkbox" id="userConsent" name="userConsent" required />
+          <label for="userConsent"
+            >Я надаю згоду на обробку персональної інформації.</label
           >
         </p>
 
         <p>
-          <button type="submit">Відправити повідомлення</button>
-          <button type="reset">Очистити поля</button>
+          <button type="submit">Надіслати звернення</button>
+          <button type="reset">Скинути форму</button>
         </p>
       </form>
     </main>
 
     <hr />
     <footer>
-      <p>&copy; 2026 MedConsult Online. Служба турботи про пацієнтів.</p>
+      <p>&copy; 2026 MedConsult Online. Підтримка клієнтів.</p>
     </footer>
   </body>
 </html>
