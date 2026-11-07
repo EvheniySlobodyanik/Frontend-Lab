@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Он-лайн консультації — Зворотній зв'язок</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-static">
+        <span class="logo-badge" aria-hidden="true">OC</span>
+        <h1>Он-лайн консультацій</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="services.html" class="nav-link">Послуги</a>
+        <a href="feedback.html" class="nav-link active">Зворотній зв'язок</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Зворотній зв'язок та запис на консультацію</h2>
+      <div class="feedback-flex-wrapper">
+        <form id="feedback-form" class="feedback-card form-box">
+          <label for="client-name">Ваше ім'я</label>
+          <input
+            type="text"
+            id="client-name"
+            name="name"
+            placeholder="Введіть ПІБ"
+            required
+          />
+
+          <label for="client-email">Електронна пошта</label>
+          <input
+            type="email"
+            id="client-email"
+            name="email"
+            placeholder="name@example.com"
+            required
+          />
+
+          <label for="topic">Напрям консультації</label>
+          <input
+            type="text"
+            id="topic"
+            name="topic"
+            placeholder="Право / ІТ / Фінанси"
+          />
+
+          <label for="message">Опис питання</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Коротко опишіть суть звернення..."
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Надіслати запит</button>
+        </form>
+
+        <aside class="feedback-card info-box">
+          <h3>Графік роботи операторів</h3>
+          <p>Пн–Пт: 08:00 – 22:00</p>
+          <p>Сб–Нд: 10:00 – 18:00</p>
+          <p>
+            Середній час відповіді чергового спеціаліста становить 7 хвилин.
+          </p>
+        </aside>
+
+        <div class="feedback-card faq-box">
+          <h3>Швидка пам'ятка</h3>
+          <p>
+            Підготуйте номер договору або технічне завдання заздалегідь для
+            максимальної ефективності сесії.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contacts-box">
+        <p>
+          Адреса: м. Київ, вул. Володимирська, 60 | Тел.: +38 (044) 239-08-14
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
