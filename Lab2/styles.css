@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f3f6f9;
+  color: rgb(28, 37, 44);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #0b4f6c;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header {
+  position: relative;
+  background: linear-gradient(135deg, #0b4f6c 0%, #14746f 100%);
+  color: white; /* Колір способом №3: ключове слово */
+  padding-top: 76px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+#main-brand.brand-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background-color: rgba(8, 56, 77, 0.92);
+  z-index: 100;
+}
+
+.brand-static {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  margin-top: -76px;
+}
+
+.logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: hsl(185, 65%, 45%);
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#main-brand h1,
+.brand-fixed h1,
+.brand-static h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+  padding: 12px 28px;
+  background-color: #083d54;
+}
+
+.nav-link {
+  color: #e0fbfc;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #ffffff;
+  color: #0b4f6c;
+  border-color: #7ae582;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.purpose-section {
+  background-color: white;
+  margin: 12px 0;
+  padding: 32px;
+  border-radius: 10px;
+  border-left: 5px solid #0b4f6c;
+}
+
+.purpose-section > h2 + p {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+h3 ~ .tasks-list {
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+.tasks-list li::before {
+  content: "✓ ";
+  color: #14746f;
+  font-weight: bold;
+}
+
+.history-leaders-card {
+  background-color: white;
+  margin-top: 24px;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.history-leaders-card:hover {
+  transform: translate(-5px, 5px);
+}
+
+.scrollable-history {
+  max-height: 175px;
+  overflow-y: auto;
+  padding: 14px;
+  margin: 14px 0 22px;
+  background-color: #f8fafc;
+  border: 1px solid #d9e2ec;
+  border-radius: 6px;
+}
+
+.float-illustration {
+  float: left;
+  margin: 0 16px 10px 0;
+  border-radius: 6px;
+}
+
+.leaders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaders-table th,
+.leaders-table td {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+}
+
+.leaders-table th {
+  background-color: #0b4f6c;
+  color: white;
+}
+
+tr[data-role="director"] {
+  background-color: #eef8fb;
+  font-weight: 600;
+}
+
+.site-footer {
+  margin-top: 32px;
+  background-color: #102a43;
+  color: #f0f4f8;
+  padding: 22px 28px;
+}
+
+.contacts-box {
+  max-width: 1120px;
+  margin: 0 auto;
+  transition:
+    color 0.3s ease 2s,
+    font-weight 0.3s ease 2s;
+}
+
+.contacts-box:hover {
+  color: red;
+  font-weight: 700;
+}
